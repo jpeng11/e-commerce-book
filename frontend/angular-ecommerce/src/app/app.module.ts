@@ -10,6 +10,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartStatusComponent } from './components/cart-status/cart-status.component';
 
 const routes: Routes = [
   { path: 'search/:keyword', component: ProductListComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
     SearchComponent,
     ProductCategoryMenuComponent,
     ProductDetailsComponent,
+    CartStatusComponent,
   ],
   imports: [RouterModule.forRoot(routes), BrowserModule, HttpClientModule],
   providers: [ProductService],
